@@ -1,0 +1,21 @@
+run - Executar comando
+enter - Enviar linhas de entrada para o comando
+type - digite as chaves no comando
+control - Digite Controle + letras
+meta - Envie a próxima tecla digitada com Alt
+keypad - alternar teclado para chaves especiais
+redraw - Força o comando para pintar
+end - Enviar EOF para comando
+cancel - Comando de interrupção
+kill - enviar sinal para processar
+status - Exibir status e configurações atuais
+cd - Alterar diretório
+env - Manipular o ambiente
+shell - Alterar shell usado para executar comandos
+resixe - Alterar o tamanho do terminal
+setsilent - Ativar / desativar a saída silenciosa
+setlinkpreviews - Ativar / desativar a expansão do link
+help - Obter ajuda
+file - Exibir e editar pequenos arquivos de texto
+upload - Carregar e substituir arquivos brutos
+r - Alias para /run ou /enter
