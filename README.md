@@ -28,8 +28,9 @@ Antes de usar isso, você deveria ter obtido um token de autenticação para o s
 ~~~
 git clone https://github.com/botgram/shell-bot.git && cd shell-bot 
 rm -r node_modules/
-apt-get install nodejs-legacy
+apt-get install -y nodejs
 npm install
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 ~~~
 
 Para iniciar o bot:
