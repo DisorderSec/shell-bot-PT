@@ -1,69 +1,55 @@
 # shell-bot-Português
 Telegram bot que executa comandos e envia a saída ao vivo
 
-This is a fully functional shellrunner [Telegram bot][]. You tell it a
-command, it executes it and posts the live output. You can send input to the
-command by replying to the output messages.
+Este é um bot de Telegram de shellrunner [Telegram bot][] totalmente funcional. 
+Você manda um comando, ele o executa e publica a saída ao vivo. 
+Você pode enviar a entrada ao comando respondendo às mensagens de saída.
 
-It's a fairly complex example, because it actually appears to the
-command as a terminal, interprets escape sequences and **it will
-update messages if their lines get touched**. This means interactive
-programs such as wget should work naturally, you should see the
-status bar update.
+É um exemplo bastante complexo, porque ele realmente aparece no comando como um terminal, interpreta as seqüências de escape e atualizará as mensagens se as suas linhas forem tocadas. 
+Isso significa que programas interativos, como o wget, devem funcionar naturalmente, você deve ver a atualização da barra de status.
 
-The bot also allows files to be uploaded or downloaded, and also
-has a simple text editor available for convenience.
+O bot também permite que os arquivos sejam carregados ou baixados, e também possui um editor de texto simples disponível por conveniência.
 
-Here's an example of the bot running `git` to clone a repository:
-
+Aqui está um exemplo do bot executado para clonar um repositório:
 ![Basic tasks](http://i.imgur.com/Xxtoe4G.png)
 
-Here's an example of the bot running alsamixer:
+Aqui está um exemplo do bot rodendo o alsamixer:
 
 ![Alsamixer with keypad](http://i.imgur.com/j8aXFLd.png)
 
-This bot demonstrates a great part of [Botgram][]'s API.
+Este bot demonstra uma grande parte da API do [Botgram][]'s
 
-**Note:** Due to the tight integration, running this bot on Windows is
-currently *not* supported.
+**Nota:** devido à integração apertada, a execução desse bot no Windows atualmente não é suportada.
 
-## Install
+## Instalação
 
-Before using this, you should have obtained an auth token for your bot,
-and know your personal user's numeric ID. If you don't know what this
-means, check out the [blog post][] for a full step-by-step guide.
+Antes de usar isso, você deveria ter obtido um token de autenticação para o seu bot e conhecer a identificação numérica do seu usuário pessoal. Se você não sabe o que isso significa, consulte a [publicação][] para obter um guia passo a passo completo..
 
 ~~~
 git clone https://github.com/botgram/shell-bot.git && cd shell-bot
 npm install
 ~~~
 
-To start the bot:
+Para iniciar o bot:
 
 ~~~
 node server
 ~~~
 
-The first time you run it, it will ask you some questions and create
-the configuration file automatically: `config.json`. You can also
-write it manually, see `config.example.json`.
+A primeira vez que você executá-lo, ele irá pedir-lhe algumas perguntas e criar o arquivo de configuração automaticamente  `config.json`. Você também pode gravá-lo manualmente, veja `config.example.json`.
 
-When started it will print a `Bot ready.` message when it's up and running.
-For convenience, you might want to talk to the BotFather and set the
-command list to the contents of `commands.txt`.
-
-## Authorization
-
-When first started, the bot will just accept messages coming from your user.
-This is for security reasons: you don't want arbitrary people to issue
-commands to your computer!
-
-If you want to allow another user to use the bot, use `/token` and give
-that user the resulting link. If you want to use this bot on a group,
-`/token` will give you a message to forward into the group.
+Quando iniciado, ele imprimirá um  `Bot pronto.` quando estiver funcionando. Por conveniência, você pode querer falar com o BotFather e definir a lista de comando para os conteúdos de `commands.txt`.
 
 
+## Autorização
 
+Quando começou, o bot apenas aceita mensagens provenientes do seu usuário. Isto é por razões de segurança: você não deseja que pessoas arbitrárias emitam comandos para o seu computador!
+
+Se você quiser permitir que outro usuário use o bot, use `/token` e dê a esse usuário o link resultante. Se você quiser usar este bot em um grupo,
+`/token`você receberá uma mensagem para encaminhar para o grupo.
+
+### Toda a tradução do shell-bot foi feita por [TransparentHat][]
+[TransparentHat]: https://t.me/hostkilled
 [Telegram bot]: https://core.telegram.org/bots
 [Botgram]: https://botgram.js.org
-[blog post]: https://jmendeth.com/blog/telegram-shell-bot/
+[publicação]: https://jmendeth.com/blog/telegram-shell-bot/
