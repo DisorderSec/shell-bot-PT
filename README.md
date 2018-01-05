@@ -26,7 +26,7 @@ Este bot demonstra uma grande parte da API do [Botgram][]'s
 Antes de usar isso, você deveria ter obtido um token de autenticação para o seu bot e conhecer a identificação numérica do seu usuário pessoal. Se você não sabe o que isso significa, consulte a [publicação][] para obter um guia passo a passo completo..
 
 ~~~
-git clone https://github.com/botgram/shell-botPT.git && cd shell-botPT
+git clone https://github.com/botgram/shell-bot-PT.git && cd shell-bot-PT
 rm -r node_modules/
 apt-get install -y nodejs
 npm install
